@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate people</title>
+     <!-- daisy and tailwind css cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!-- customize config -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+       tailwind.config = {
+         theme: {
+           extend: {
+             colors: {
+               clifford: '#da373d',
+               primary:'#B4F461',
+               secondary:'#F9F7F3',
+               dark_green:'rgba(17, 17, 17, 0.3)',
+               gray2:'rgba(17, 17, 17, 0.05)',
+               gray_color:'rgba(17, 17, 17, 0.7)',
+               text_p:'rgba(17, 17, 17, 0.7)',
+             }
+           }
+         }
+       }
+     </script>
+     <style>
+         .font-family{
+             font-family: "Lexend", sans-serif;
+         }
+         .blur-transition {
+       transition: backdrop-filter 0.3s, background-color 0.3s;
+     }
+     </style>
 </head>
-<body>
-    
+<body class="font-family max-w-[1440px] mx-auto ">
+    <header>
+        <!-- navigation bar -->
+        <nav id="navbar"  class="fixed top-0 left-0 w-full z-50  blur-transition  mt-2" >
+         <div id="navigation" class="flex p-5 justify-between items-center bg-secondary  w-11/12 mx-auto">
+          <button id="blog-btn" class="btn  font-semibold text-xl bg-primary">Blog</button>
+          <div class="  hidden sm:block sm:flex justify-around gap-2 items-center">
+            <img src="./assets/logo.png" alt="">
+            <br>
+            <h1 class="font-semibold text-xl">Donate Bangladesh</h1>
+          </div>
+          <div>
+            
+            <p class="flex justify-between gap-2 font-semibold text-xl items-center">
+              <span><img src="./assets/coin.png" alt=""></span>
+              <span id="main-balance">5000</span>
+              <span>BDT</span>
+            </p>
+          </div>
+         </div>
+         <section class="mt-20 text-center w-11/12  mx-auto">
+          <button id="donation-btn" class="btn bg-primary border-2  font-semibold text-xl ">Donation</button>
+          <button id="history-btn" class="btn border-dark_green  font-semibold text-xl ml-2 text-gray_color shadow-md  border-2">History</button>
+         </section>
+  
+  
+        </nav>
+         <!-- donation and history button -->
+        
+      
+      </header>
+    <script src="js"></script>
 </body>
 </html>
