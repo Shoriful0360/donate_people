@@ -3,15 +3,15 @@
 
 // ************get input Field vlaue by common function********
 
-function getInputValueById (id){
-    parseFloat(document.getElementById(id).value);
-    return;
+function getInputValueById(id){
+    return parseFloat(document.getElementById(id).value);
+   
 }
 
 
 // ************get inner Text vlaue by common function********
 
-function getInputValueById (id){
-    parseFloat(document.getElementById(id).innerText);
-    return;
+function getTextValueById (id){
+    return parseFloat(document.getElementById(id).innerText);
+    
 }
