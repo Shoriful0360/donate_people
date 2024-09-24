@@ -70,6 +70,65 @@
         
       
       </header>
-    <script src="js"></script>
+      <main id="main-section" class="max-w-[1140px] pt-52  mx-auto w-11/12 ">
+        <!-- donate card 1 -->
+        <div class="hero border-2  relative rounded-md mt-8  ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="./assets/noakhali.png" class=" rounded-lg shadow-2xl" />
+            <div>
+              <button class="flex items-center gap-2 bg-gray2 p-2 rounded-md">
+                <img src="./assets/coin.png" alt="">
+                <span id="donate-balance-1">0</span>
+                <span>BDT</span>
+              </button>
+              <h1 class="text-xl py-2 lg:py-4 font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+              <p class=" lg:py-4 text-text_p  ">
+                The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+                help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
+                makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
+                of those in need.
+              </p>
+              <div class="my-4">
+                <input id="flood-input-field" type="text" placeholder="Write donation Amount"
+                  class="input w-full input-bordered" required />
+    
+              </div>
+              <button id="donate-btn" class="btn w-full text-xl font-semibold bg-primary">Donate Now</button>
+    
+              <!-- modal -->
+    
+              <div id="modal" class="border-2 hidden absolute right-14 bottom-14 z-50 bg-white lg:right-52 w-fit space-y-2 p-5 rounded-md flex flex-col items-center ">
+                <h1 class="text-3xl font-bold">Congrats!</h1>
+                <img src="./assets/coin.png" alt="">
+                <p>You Have Donate for Humankind</p>
+                <h1 class="text-xl font-bold">Successfully</h1>
+                <button id="cls" class=" btn text-xl font-semibold"> Close confirmation</button>
+    
+              </div>
+            
+    
+            </div>
+          </div>
+        </div>
+      </main>
+   <script src="js/utility.js"></script>
+   <script src="js/donate_1.js"></script>
+   <script src="js/donate_2.js"></script>
+   <script src="js/donate_3.js"></script>
+   <script src="js/window.js"></script>
+   <script>
+    const navbar = document.getElementById('navbar');
+    const navigationBar=document.getElementById('navigation')
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('backdrop-blur-md', 'bg-opacity-100');
+        navigationBar.classList.remove('bg-secondary')
+      } else {
+        navbar.classList.remove('backdrop-blur-md', 'bg-opacity-100');
+        navigationBar.classList.add('bg-secondary')
+      }
+    });
+  </script>
 </body>
 </html>
