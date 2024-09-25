@@ -27,14 +27,14 @@ donateButtonEl1.addEventListener('click',function(){
     const donateBalance= getTextValueById('donate-balance-1');
 
     const newdonateBalance= donateBalance + inputValue ;
-    document.getElementById('donate-balance-1').textContent= newdonateBalance
+    document.getElementById('donate-balance-1').textContent= newdonateBalance.toFixed(2)
     document.getElementById('modal-1').classList.remove('hidden')
     
     inputValueEl1.value=''
 
      historyContainerEl.innerHTML +=`
      <div class="border-2 p-5 rounded-md mt-4">
-      <p>${inputValue} taka is Donated for Flood Relief in Noakhali,Bangladesh  </P>
+      <p>${inputValue} taka is Donated for Flood Relief in Feni,Bangladesh  </P>
       <p> ${new Date()} </p>
       </div>
          
@@ -43,7 +43,7 @@ donateButtonEl1.addEventListener('click',function(){
     // calculate part main Balance
 
     const newMainBalance=mainBalance - inputValue ;
-    document.getElementById('main-balance').textContent=newMainBalance;
+    document.getElementById('main-balance').textContent=newMainBalance.toFixed(2);
      // history
     
 
@@ -78,6 +78,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 
 donationButtonEl.addEventListener('click',function(){
     document.getElementById('main-section').classList.remove('hidden');
+    historyContainerEl.classList.add('hidden')
     
     historyButtonEl.classList.remove('bg-primary')
     historyButtonEl.classList.add('border-dark_green')
