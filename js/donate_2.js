@@ -35,7 +35,7 @@ donateButtonEl2.addEventListener('click',function(){
 
      historyContainerEl.innerHTML +=`
      <div class="border-2 p-5 rounded-md mt-4">
-      <p>${inputValue} taka is Donated for Flood Relief in Noakhali,Bangladesh  </P>
+      <p>${inputValue} taka is Donated for Flood Relief in Feni,Bangladesh  </P>
       <p> ${new Date()} </p>
       </div>
          
